@@ -1,0 +1,13 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sait_db_uts";
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
